@@ -18,7 +18,7 @@ image_path = arg.img
 #坐标转换，原始存储的是YOLOv5格式
 # Convert nx4 boxes from [x, y, w, h] normalized to [x1, y1, x2, y2] where xy1=top-left, xy2=bottom-right
 def xywh2xyxy(x, w1, h1, img):
-    labels = ['person', 'car']
+    labels = ['s1', 's2', 's3']
     label, x, y, w, h = x
     print("原图宽高:\nw1={}\nh1={}".format(w1, h1))
     #边界框反归一化
